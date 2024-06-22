@@ -9,12 +9,15 @@
         'resources/css/app.css',
         'resources/js/app.js',
         ])
-    {{-- @yield('style') --}}
+        {{-- <style>
+            main {
+                background-image: url('../../public/images/hero.jpeg');
+            }
+        </style> --}}
+    @yield('style')
 </head>
 <body>
-    @include('pages.navbar')
-    {{-- @include('pages.nav') --}}
-    <main class="font-sans">
+    <main class="font-sans]">
         @yield('content')
     </main>
     <footer>
