@@ -20,11 +20,12 @@
                 </a>
             </div>
         </div>
-        <div class="w-full bg-gradient-to-b from-transparent via-pre-extra-green to-pre-dark-green">
+        <div class="w-full bg-gradient-to-b from-transparent via-pre-dark-green to-pre-extra-green">
             <img src="{{ asset('images/reff-removebg-preview.png') }}" alt="man" class="w-full h-full md:w-3/4 md:h-3/4 mx-auto">
         </div>
     </div>
 </div>
 
 @include('pages.best-sellers')
+@include('pages.clothes')
 @endsection

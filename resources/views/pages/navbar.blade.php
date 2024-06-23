@@ -1,5 +1,5 @@
 <nav class="bg-transparent overflow-hidden">
-    <div class="w-auto h-16 sm:h-20 px-3 lg:px-8 bg-slate-700 bg-opacity-50">
+    <div class="w-auto h-16 sm:h-20 px-3 lg:px-8 bg-slate-700 bg-opacity-50 backdrop-blur">
         <div class="relative flex items-center justify-between">
             <div class="shrink-0 flex items-center justify-center">
                 <img src="{{ asset('images/assets/logo.png') }}" alt="Gymfinity" class="w-16 h-16 sm:w-20 sm:h-20 inset-0">
@@ -66,17 +66,17 @@
         </div>
     </div>
 
-    <div class="absolute w-full inset-y-0 top-16 lg:top-20 md:w-8/12 lg:hidden bg-red-500 hidden" id="mobile-menu">
+    <div class="absolute w-full inset-y-0 top-16 md:top-20 md:w-8/12 lg:hidden bg-slate-700 bg-opacity-50 backdrop-blur z-10 hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300" aria-current="page">
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-slate-700 hover:bg-opacity-30 hover:text-white" aria-current="page">
                 Profile
             </a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Clothes</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Items</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Blogs</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Favorite</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sign in</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-slate-700 hover:bg-opacity-30 hover:text-white">Clothes</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Items</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Blogs</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Favorite</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Sign in</a>
           </div>
     </div>
 </nav>

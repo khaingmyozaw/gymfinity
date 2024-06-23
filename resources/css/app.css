@@ -10,3 +10,43 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+/* Best Seller Animation at Home page */
+.bs-item.active .bs-img {
+    animation: bs_image_animation .5s ease-in-out forwards;
+    transition: .5s;
+}
+.bs-item.active .bs-content h3,
+.bs-item.active .bs-content p,
+.bs-item.active .bs-content a {
+    animation: bs_contents_animation .6s ease-in-out forwards;
+    transition: .6s;
+}
+.bs-item.active .bs-content p{
+    animation-delay: .1s;
+}
+
+.bs-item.active .bs-content a {
+    animation-delay: .2s;
+}
+
+@keyframes bs_image_animation {
+    from{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes bs_contents_animation {
+    from{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
