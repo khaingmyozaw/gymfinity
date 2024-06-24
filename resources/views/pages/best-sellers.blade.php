@@ -1,4 +1,4 @@
-<div class="w-full h-96 py-16 bg-pre-dark-green relative">
+<div class="w-full h-fit sm:h-100dvh py-16 bg-pre-dark-green relative overflow-hidden">
     {{-- item 1 --}}
     <x-best-seller 
     :image="'images/man.jpeg'" 
