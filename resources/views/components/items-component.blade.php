@@ -11,9 +11,6 @@
             <span>
                 {{ $code }}
             </span>
-            <span class="me-4">
-                {{ $type }}
-            </span>
         </div>
         <div class="py-3 flex items-center justify-between text-slate-300">
             <span class="text-pre-yellow">
@@ -23,20 +20,20 @@
                 @foreach ($colors as $color)
                     @switch($color)
                         @case('black')
-                        <span class="inline-block w-4 h-4 mx-1 rounded-full bg-black"></span>
+                        <span class="inline-block w-4 h-4 mx-1 rounded-full bg-yellow-500"></span>
                             @break
                         @case('white')
-                        <span class="inline-block w-4 h-4 mx-1 rounded-full bg-white"></span>
+                        <span class="inline-block w-4 h-4 mx-1 rounded-full bg-red-500"></span>
                             @break
                         @default  
-                        <span class="inline-block w-4 h-4 mx-1 rounded-full bg-slate-700"></span>
+                        <span class="inline-block w-4 h-4 mx-1 rounded-full bg-slate-800"></span>
                     @endswitch
                 @endforeach 
             </div>
         </div>
         <div class="w-full flex items-center justify-between">
-            <span class="text-xs text-slate-300">
-                {{ $sizes }}
+            <span class="text-xs text-white font-bold">
+                {{ $weight }} kg
             </span>
             <a href="#" class="text-sm text-slate-300 hover:underline hover:italic">View Detail &#8594;</a>
         </div>
