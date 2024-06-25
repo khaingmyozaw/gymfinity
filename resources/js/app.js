@@ -4,6 +4,11 @@ $('.menu-btn').on('click', function() {
     $('#mobile-menu').toggleClass('hidden');
 });
 
+// like button click
+$('.favorite .like-btn').on('click', function() {
+    $(this).children().toggleClass('hidden');
+});
+
 // Best Seller Animation
 let bs_index = 0;
 setInterval(() => {
