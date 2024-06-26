@@ -1,4 +1,4 @@
-<div class="shrink-0 w-64 h-96 my-3 rounded-md overflow-hidden bg-pre-dark-green bg-opacity-70 backdrop-blur shadow-lg border border-slate-500">
+<div class="shrink-0 w-64 h-96 my-3 rounded-md overflow-hidden bg-pre-dark-green bg-opacity-70 backdrop-blur shadow-lg border border-slate-500 snap-start">
     <div class="w-100 h-1/2 relative favorite">
         <img src="{{ asset($image) }}" alt="" class="w-full h-full object-contain object-center flex items-center justify-center">
         <button class="inline-block absolute top-1 right-1 p-1 rounded-full bg-slate-100 bg-opacity-20 hover:bg-opacity-30 transition like-btn">

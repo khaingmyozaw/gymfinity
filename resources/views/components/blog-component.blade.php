@@ -1,4 +1,4 @@
-<div class="shrink-0 w-80 h-96 p-3 rounded-md bg-pre-extra-green bg-opacity-70 backdrop-blur">
+<div class="shrink-0 w-full sm:w-3/4 md:w-80 h-96 p-3 rounded-md bg-pre-extra-green bg-opacity-70 backdrop-blur snap-start">
     <div class="w-full flex items-end justify-between">
         <div>
             @foreach ($categories as $category)

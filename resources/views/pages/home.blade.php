@@ -29,4 +29,5 @@
 @include('pages.best-sellers')
 @include('pages.clothes')
 @include('pages.blog-page')
+@include('pages.faq-page')
 @endsection

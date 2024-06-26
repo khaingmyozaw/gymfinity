@@ -6,7 +6,7 @@
         <a href="#" class="inline-block shrink-0 w-20 text-white font-md hover:underline hover:italic">View All&#8594;</a>
     </div>
 
-    <div class="sm:p-3 flex gap-4 sm:gap-6 flex-nowrap overflow-x-scroll">
+    <div class="sm:p-3 flex gap-4 sm:gap-6 flex-nowrap overflow-x-scroll snap-x">
         <x-suit-clothes 
             :image="'images/fe-1.png'"
             :name="'Gym wear one'"
