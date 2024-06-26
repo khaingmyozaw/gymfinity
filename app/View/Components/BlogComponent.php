@@ -12,16 +12,16 @@ class BlogComponent extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public array $category,
+        public array $categories,
         public string $date,
         public string $image,
         public string $title,
         public string $contents,
-        public int $comments,
-        public int $likes,
+        public $comments,
+        public $likes,
     )
     {
-        $this->category = $category;
+        $this->categories = $categories;
         $this->date = $date;
         $this->image = $image;
         $this->title = $title;
