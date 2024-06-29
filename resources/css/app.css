@@ -50,3 +50,79 @@
         opacity: 1;
     }
 }
+
+/* Feedback Section Spin effect */
+.spin-div {
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        #29353370,
+        #293533,
+        #29353370
+    );
+}
+.spin-items {
+    position: absolute;
+    height: auto;
+    left: 100%;
+    animation: Spin 10s linear infinite;
+}
+.spin-items:nth-child(2) {
+    animation-delay: 2s;
+}
+.spin-items:nth-child(3) {
+    animation-delay: 4s;
+}
+.spin-items:nth-child(4) {
+    animation-delay: 6s;
+}
+.spin-items:nth-child(5) {
+    animation-delay: 8s;
+}
+.spin-div:hover .spin-items {
+    animation-play-state: paused;
+}
+
+@keyframes Spin {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -110%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .spin-div {
+        overflow-x: auto;
+        mask-image: linear-gradient(
+            to right,
+            #29353390,
+            #293533,
+            #29353390
+        );
+    }
+    .spin-items {
+        position: relative;
+        left: 0;
+        animation: none;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .spin-div {
+        overflow-x: auto;
+        mask-image: linear-gradient(
+            to right,
+            #29353390,
+            #293533,
+            #29353390
+        );
+    }
+    .spin-items {
+        position: relative;
+        left: 0;
+        animation: none;
+    }
+}

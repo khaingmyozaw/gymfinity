@@ -30,5 +30,5 @@
 @include('pages.clothes')
 @include('pages.blog-page')
 @include('pages.faq-page')
-@include('pages.rating-page')
+@include('pages.feedbacks')
 @endsection

@@ -17,7 +17,7 @@
     @yield('style')
 </head>
 <body>
-    <main class="font-sans]">
+    <main class="font-sans">
         @yield('content')
     </main>
     <footer>
