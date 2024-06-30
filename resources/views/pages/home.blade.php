@@ -27,8 +27,8 @@
 </div>
 
 @include('pages.best-sellers')
-@include('pages.clothes')
-@include('pages.blog-page')
+@include('pages.clothes.clothes')
+@include('pages.blogs.blog-page')
 @include('pages.faq-page')
 @include('pages.feedbacks')
 @include('pages.contacts')
