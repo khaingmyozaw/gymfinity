@@ -20,8 +20,8 @@
     <main class="font-sans">
         @yield('content')
     </main>
-    <footer>
-        <p class="py-5 text-center bg-pre-dark-green">
+    <footer class="border-t border-opacity-70 border-slate-300">
+        <p class="py-8 text-center bg-pre-dark-green">
             &copy;Copyright 2024, by zeembi.
         </p>
     </footer>
