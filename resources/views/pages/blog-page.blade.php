@@ -1,4 +1,4 @@
-<div class="w-full h-auto py-12 px-5 sm:px-8 bg-pre-dark-green ">
+<div class="w-full h-auto py-12 px-5 sm:px-8 bg-pre-dark-green" id="blogs">
     <x-title-component :title="'Latest News and Blogs'" class="text-center text-white py-4"/>
     <div class="py-3 flex gap-4 items-center justify-center sm:gap-6 flex-wrap md:flex-nowrap overflow-hidden sm:overflow-x-scroll snap-x">
         <x-blog-component 

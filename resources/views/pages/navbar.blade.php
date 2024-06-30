@@ -6,17 +6,17 @@
             </div>
             <div class="flex-1 ml-6 hidden lg:block">
                 <div class="flex">
-                    <a href="" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
+                    <a href="#" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
                         home
                     </a>
-                    <a href="" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
+                    <a href="#clothes" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
                         Clothes
                     </a>
-                    <a href="" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
-                        Blogs
+                    <a href="#items" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
+                        Items
                     </a>
-                    <a href="" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
-                        items
+                    <a href="#blogs" class="px-4 py-2 mx-5 rounded-md uppercase text-sm text-semibold text-slate-50 hover:bg-slate-700 hover:bg-opacity-10">
+                        Blogs
                     </a>
                 </div>
             </div>
@@ -72,9 +72,9 @@
             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-slate-700 hover:bg-opacity-30 hover:text-white" aria-current="page">
                 Profile
             </a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-slate-700 hover:bg-opacity-30 hover:text-white">Clothes</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Items</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Blogs</a>
+            <a href="#clothes" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-slate-700 hover:bg-opacity-30 hover:text-white">Clothes</a>
+            <a href="#items" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Items</a>
+            <a href="#blogs" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Blogs</a>
             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Favorite</a>
             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Sign in</a>
           </div>

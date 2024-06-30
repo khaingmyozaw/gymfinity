@@ -1,5 +1,5 @@
 {{-- Clothes --}}
-<div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-extra-green">
+<div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-extra-green" id="clothes">
 
     <div class="sm:p-3 flex items-end justify-between">
         <x-title-component :title="'Latest Available Clothes'" class="text-white w-50"/>
@@ -66,7 +66,7 @@
 </div>
 
 {{-- Items --}}
-<div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-extra-green">
+<div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-extra-green" id="items">
 
     <div class="sm:p-3 flex items-end justify-between">
         <x-title-component :title="'Latest Available Items'" class="text-white w-50"/>
