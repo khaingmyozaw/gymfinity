@@ -21,7 +21,9 @@
         @yield('content')
     </main>
     <footer>
-        {{-- @yield('footer') --}}
+        <p class="py-5 text-center bg-pre-dark-green">
+            &copy;Copyright 2024, by zeembi.
+        </p>
     </footer>
 
     {{-- @yield('script') --}}

@@ -31,4 +31,5 @@
 @include('pages.blog-page')
 @include('pages.faq-page')
 @include('pages.feedbacks')
+@include('pages.contacts')
 @endsection
