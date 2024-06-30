@@ -7,7 +7,7 @@
         <p class="text-white text-center mt-5 md:text-start md:w-3/4">
             {{ $content }}
         </p>
-        <a href={{ $link }} class="inline-block py-2 px-4 mt-3 rounded-md bg-pre-yellow">
+        <a href={{ $link }} class="w-fit mx-auto sm:mx-0 inline-block py-2 px-4 mt-3 rounded-md bg-pre-yellow">
             Shop Now
         </a>
     </div>
