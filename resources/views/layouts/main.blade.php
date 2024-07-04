@@ -12,6 +12,8 @@
     @yield('style')
 </head>
 <body>
+    {{-- Navbar --}}
+    @include('pages.navbar')
     <main class="font-sans">
         @yield('content')
     </main>

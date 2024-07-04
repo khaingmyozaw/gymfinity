@@ -6,6 +6,9 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
+Route::get('/detail', function() {
+    return view('pages.products.items-list');
+});
 Route::get('/register', function() {
     return view('pages.register-page');
 });

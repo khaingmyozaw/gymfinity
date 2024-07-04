@@ -1,11 +1,9 @@
 @extends('layouts.main')
 @section('content')
 <div class="w-full h-auto home">
-    {{-- Navbar --}}
-    @include('pages.navbar')
 
     {{-- Home page content --}}
-    <div class="w-full h-auto flex flex-col items-center bg-black bg-opacity-20 backdrop-blur-sm">
+    <div class="w-full h-auto pt-20 flex flex-col items-center bg-black bg-opacity-20 backdrop-blur-sm">
         <div class="px-3 md:w-3/4">
             <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black w-full mt-16">
                 Discover Your Perfect & <br>
@@ -27,7 +25,7 @@
 </div>
 
 @include('pages.best-sellers')
-@include('pages.clothes.clothes')
+@include('pages.products.clothes')
 @include('pages.blogs.blog-page')
 @include('pages.faq-page')
 @include('pages.feedbacks')

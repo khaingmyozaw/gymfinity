@@ -13,11 +13,9 @@ class Breadcrumb extends Component
      */
     public function __construct(
         public array $links,
-        public $icon,
     )
     {
         $this->links = $links;
-        $this->icon = $icon;
     }
 
     /**

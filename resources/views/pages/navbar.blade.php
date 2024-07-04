@@ -1,5 +1,5 @@
-<nav class="bg-transparent overflow-hidden">
-    <div class="w-auto h-16 sm:h-20 px-3 lg:px-8 bg-slate-700 bg-opacity-50 backdrop-blur">
+<nav class="w-screen overflow-hidden fixed bg-pre-extra-green bg-opacity-90 z-50 backdrop-blur">
+    <div class="w-auto h-16 sm:h-20 px-3 lg:px-8">
         <div class="relative flex items-center justify-between">
             <div class="shrink-0 flex items-center justify-center">
                 <img src="{{ asset('images/assets/logo.png') }}" alt="Gymfinity" class="w-16 h-16 sm:w-20 sm:h-20 inset-0">
