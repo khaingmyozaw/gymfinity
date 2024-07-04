@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/register', function() {
     return view('pages.register-page');
 });
+Route::get('/login', function() {
+    return view('pages.login-page');
+});
