@@ -85,6 +85,24 @@
     animation-play-state: paused;
 }
 
+/* Blog Contents */
+#blog-content img {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 91.666667%;
+    height: auto;
+    min-height: 15rem;
+    max-height: 18rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.25rem;
+    object-fit: cover;
+}
+#blog-content p {
+    margin: 16px 0;;
+}
+
 @keyframes Spin {
     from {
         left: 100%;

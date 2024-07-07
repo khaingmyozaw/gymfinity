@@ -16,12 +16,14 @@ class ReviewComponent extends Component
         public string $date,
         public string $message,
         public $avatar,
+        public bool $reply = false,
     )
     {
         $this->name = $name;
         $this->date = $date;
         $this->message = $message;
         $this->avatar = $avatar;
+        $this->reply = $reply;
     }
 
     /**
