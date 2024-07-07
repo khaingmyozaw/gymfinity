@@ -4,7 +4,7 @@
         <a href="#" class="inline-block py-5">
             <
         </a>
-        <div class="w-full h-auto p-5 rounded border bg-slate-100 bg-opacity-10 md:flex justify-center">
+        <div class="w-full h-auto p-5 rounded border bg-pre-dark-green bg-opacity-100 md:flex justify-center">
             <div class="w-full md:w-4/12 h-auto px-4">
                 <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
                     <img src="{{ asset('images/fe-3.png') }}" alt="products" class="w-full h-full object-contain object-center">
@@ -192,6 +192,61 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-extra-green">
+            <x-tab-component 
+            :specifications="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque qui fuga laboriosam, odit dicta ipsam saepe labore amet necessitatibus deleniti exercitationem repellendus eligendi ea voluptate magni? Architecto, explicabo tempore!'"
+            :shipping="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque qui fuga laboriosam, odit dicta ipsam saepe labore amet necessitatibus deleniti exercitationem repellendus eligendi ea voluptate magni? Architecto, explicabo tempore!'"
+            />
+        </div>
+
+        {{-- Related Products --}}
+        <div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-dark-green">
+            <x-title-component :title="'Related Products'" class="text-white w-50"/>
+
+            <div class="sm:p-3 flex justify-center gap-5 sm:gap-6 overflow-x-scroll snap-x">
+                <x-suit-clothes 
+                    :image="'images/fe-1.png'"
+                    :name="'Gym wear one'"
+                    :price="'100'"
+                    :code="'#gwo-30'"
+                    :type="'Female'"
+                    :colors="['black', 'white']"
+                    :sizes="'M / L / XL / 2XL'"
+                    class="w-3/4 sm:w-2/5 md:w-1/5 "
+                />
+                <x-suit-clothes 
+                    :image="'images/fe-1.png'"
+                    :name="'Gym wear one'"
+                    :price="'100'"
+                    :code="'#gwo-30'"
+                    :type="'Female'"
+                    :colors="['black', 'white']"
+                    :sizes="'M / L / XL / 2XL'"
+                    class="w-3/4 sm:w-2/5 md:w-1/5 "
+                />
+                <x-suit-clothes 
+                    :image="'images/fe-1.png'"
+                    :name="'Gym wear one'"
+                    :price="'100'"
+                    :code="'#gwo-30'"
+                    :type="'Female'"
+                    :colors="['black', 'white']"
+                    :sizes="'M / L / XL / 2XL'"
+                    class="w-3/4 sm:w-2/5 md:w-1/5 "
+                />
+                <x-suit-clothes 
+                    :image="'images/fe-1.png'"
+                    :name="'Gym wear one'"
+                    :price="'100'"
+                    :code="'#gwo-30'"
+                    :type="'Female'"
+                    :colors="['black', 'white']"
+                    :sizes="'M / L / XL / 2XL'"
+                    class="w-3/4 sm:w-2/5 md:w-1/5 "
+                />
             </div>
         </div>
     </div>
