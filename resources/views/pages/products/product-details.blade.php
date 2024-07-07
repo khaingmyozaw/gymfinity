@@ -7,6 +7,7 @@
         <div class="w-full h-auto p-5 rounded border bg-pre-dark-green bg-opacity-100 md:flex justify-center">
             <div class="w-full md:w-4/12 h-auto px-4">
                 <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
+                <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
                     <img src="{{ asset('images/fe-3.png') }}" alt="products" class="w-full h-full object-contain object-center">
                 </div>
                 <div class="w-full h-auto py-4 flex flex-nowrap gap-2 overflow-auto">
@@ -51,6 +52,7 @@
 
                 {{-- In Stock --}}
                 <p class="py-3 text-[#21f505]">
+                <p class="py-3 text-[#21f505]">
                     {{-- correct icon --}}
                     <svg class="inline-block mr-2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#21f505" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
 
@@ -58,6 +60,7 @@
                 </p>
 
                 {{-- If Product is a shirt , size section --}}
+                <div class="py-3">
                 <div class="py-3">
                     <h3 class="text-slate-300 my-2">
                         Select size
@@ -89,11 +92,30 @@
 
                 {{-- Product Color --}}
                 <div class="py-3">
+                <div class="py-3">
                     <h3 class="text-slate-300 my-2">
                         Color: blue
                     </h3>
                     <form action="">
 
+                        <label for="color1" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                            <div class="w-4 h-4 rounded-full bg-green-500"></div>
+                            <input type="radio" name="color" id="color1" class="hidden" checked>
+                        </label>
+
+                        <label for="color2" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                            <div class="w-4 h-4 rounded-full bg-white"></div>
+                            <input type="radio" name="color" id="color2" class="hidden">
+                        </label>
+
+                        <label for="color3" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                            <div class="w-4 h-4 rounded-full bg-red-300"></div>
+                            <input type="radio" name="color" id="color3" class="hidden">
+                        </label>
+
+                        <label for="color-4" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                            <div class="w-4 h-4 rounded-full bg-blue-500"></div>
+                            <input type="radio" name="color" id="color-4" class="hidden">
                         <label for="color1" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
                             <div class="w-4 h-4 rounded-full bg-green-500"></div>
                             <input type="radio" name="color" id="color1" class="hidden" checked>
@@ -250,4 +272,5 @@
             </div>
         </div>
     </div>
+@endsection 
 @endsection 
