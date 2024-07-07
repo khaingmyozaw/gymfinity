@@ -8,6 +8,7 @@
         <div class="w-full h-auto p-5 rounded border bg-pre-dark-green bg-opacity-100 md:flex justify-center">
             <div class="w-full md:w-4/12 h-auto px-4">
                 <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
+                <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
                     <img src="{{ asset('images/fe-3.png') }}" alt="products" class="w-full h-full object-contain object-center">
                 </div>
                 <div class="w-full h-auto py-4 flex flex-nowrap gap-2 overflow-auto">
@@ -30,12 +31,12 @@
                 <h2 class="text-xl font-bold mb-3">Product name here</h2>
 
                 {{-- Rating, Reviews and Orders --}}
-                <div class="w-full flex items-center">
-                    <div class="mr-3">
+                <div class="w-full flex justify-between">
+                    <div>
                         <x-rating-component :type="false"/>
                         <span class="inline-block ms-2 text-orange-400">9.3</span>
                     </div>
-                    <div class="mr-3 text-sm text-slate-300">
+                    <div>
                         {{-- message icon --}}
                         <svg class="inline-block mr-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: rgb(203 213 225);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path></svg>
 
