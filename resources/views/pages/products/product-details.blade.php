@@ -4,6 +4,7 @@
         <a href="#" class="inline-block py-5">
             <
         </a>
+        {{-- Product Details --}}
         <div class="w-full h-auto p-5 rounded border bg-pre-dark-green bg-opacity-100 md:flex justify-center">
             <div class="w-full md:w-4/12 h-auto px-4">
                 <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
@@ -195,7 +196,7 @@
             </div>
         </div>
 
-        <div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-extra-green">
+        <div class="w-full h-auto py-12 px-5 sm:px-8 bg-pre-extra-green">
             <x-tab-component 
             :specifications="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque qui fuga laboriosam, odit dicta ipsam saepe labore amet necessitatibus deleniti exercitationem repellendus eligendi ea voluptate magni? Architecto, explicabo tempore!'"
             :shipping="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque qui fuga laboriosam, odit dicta ipsam saepe labore amet necessitatibus deleniti exercitationem repellendus eligendi ea voluptate magni? Architecto, explicabo tempore!'"
@@ -206,7 +207,7 @@
         <div class="w-100 h-auto py-12 px-5 sm:px-8 bg-pre-dark-green">
             <x-title-component :title="'Related Products'" class="text-white w-50"/>
 
-            <div class="sm:p-3 flex justify-center gap-5 sm:gap-6 overflow-x-scroll snap-x">
+            <div class="sm:p-3 flex gap-4 sm:gap-6 justify-center flex-wrap ">
                 <x-suit-clothes 
                     :image="'images/fe-1.png'"
                     :name="'Gym wear one'"

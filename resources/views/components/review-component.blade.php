@@ -25,7 +25,9 @@
     </p>
     <hr class="opacity-30 mt-5">
     <div class="py-2 flex justify-between items-center">
-        <div></div>
+        <div>
+            {{ $slot }}
+        </div>
         <div>
             <x-like-button :count="'100'" class="float-right" />
             <x-like-button :count="'5'" :rotate="true"/>
