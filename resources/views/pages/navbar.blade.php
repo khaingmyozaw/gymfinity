@@ -66,7 +66,7 @@
         </div>
     </div>
 
-    <div class="absolute w-full inset-y-0 top-16 md:top-20 md:w-8/12 lg:hidden bg-slate-700 bg-opacity-50 backdrop-blur z-10 hidden" id="mobile-menu">
+    <div class="relative w-full inset-y-0 md:w-8/12 lg:hidden bg-slate-700 bg-opacity-30 backdrop-blur z-100 hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-slate-700 hover:bg-opacity-30 hover:text-white" aria-current="page">

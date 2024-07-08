@@ -8,7 +8,6 @@
         <div class="w-full h-auto p-5 rounded border bg-pre-dark-green bg-opacity-100 md:flex justify-center">
             <div class="w-full md:w-4/12 h-auto px-4">
                 <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
-                <div class="w-full h-96 rounded bg-slate-100 bg-opacity-10 shadow">
                     <img src="{{ asset('images/fe-3.png') }}" alt="products" class="w-full h-full object-contain object-center">
                 </div>
                 <div class="w-full h-auto py-4 flex flex-nowrap gap-2 overflow-auto">
@@ -31,12 +30,12 @@
                 <h2 class="text-xl font-bold mb-3">Product name here</h2>
 
                 {{-- Rating, Reviews and Orders --}}
-                <div class="w-full flex justify-between">
-                    <div>
+                <div class="w-full flex items-center">
+                    <div class="mr-3">
                         <x-rating-component :type="false"/>
                         <span class="inline-block ms-2 text-orange-400">9.3</span>
                     </div>
-                    <div>
+                    <div class="mr-3 text-sm text-slate-300">
                         {{-- message icon --}}
                         <svg class="inline-block mr-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="fill: rgb(203 213 225);transform: ;msFilter:;"><path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path></svg>
 
@@ -66,22 +65,22 @@
                     </h3>
                     <form action="">
 
-                        <label for="size1" class="w-10 h-10 mr-2 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500">
+                        <label for="size1" class="w-10 h-10 mr-2 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500 cursor-pointer">
                             M
                             <input type="radio" name="size" id="size1" class="hidden" checked>
                         </label>
 
-                        <label for="size2" class="w-10 h-10 mr-2 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500">
+                        <label for="size2" class="w-10 h-10 mr-2 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500 cursor-pointer">
                             L
                             <input type="radio" name="size" id="size2" class="hidden">
                         </label>
 
-                        <label for="size3" class="w-10 h-10 mr-2 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500">
+                        <label for="size3" class="w-10 h-10 mr-2 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500 cursor-pointer">
                             XL
                             <input type="radio" name="size" id="size3" class="hidden">
                         </label>
 
-                        <label for="size4" class="w-10 h-10 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500">
+                        <label for="size4" class="w-10 h-10 rounded border border-slate-200 bg-slate-200 border-opacity-30 bg-opacity-30 text-lg inline-flex items-center justify-center has-[:checked]:bg-[#21f505] has-[:checked]:text-slate-500 cursor-pointer">
                             2XL
                             <input type="radio" name="size" id="size4" class="hidden">
                         </label>
@@ -96,22 +95,22 @@
                     </h3>
                     <form action="">
 
-                        <label for="color1" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                        <label for="color1" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2 cursor-pointer">
                             <div class="w-4 h-4 rounded-full bg-green-500"></div>
                             <input type="radio" name="color" id="color1" class="hidden" checked>
                         </label>
 
-                        <label for="color2" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                        <label for="color2" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2 cursor-pointer">
                             <div class="w-4 h-4 rounded-full bg-white"></div>
                             <input type="radio" name="color" id="color2" class="hidden">
                         </label>
 
-                        <label for="color3" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                        <label for="color3" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2 cursor-pointer">
                             <div class="w-4 h-4 rounded-full bg-red-300"></div>
                             <input type="radio" name="color" id="color3" class="hidden">
                         </label>
 
-                        <label for="color-4" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2">
+                        <label for="color-4" class="w-6 h-6 mr-2 border border-slate-300 border-opacity-30 rounded-full inline-flex items-center justify-center has-[:checked]:bg-pre-dark-green has-[:checked]:border-opacity-100 has-[:checked]:border-[#21f505] has-[:checked]:border-2 cursor-pointer">
                             <div class="w-4 h-4 rounded-full bg-blue-500"></div>
                             <input type="radio" name="color" id="color-4" class="hidden">
                         </label>
@@ -148,7 +147,7 @@
                         </h3>
                     </div>
                     <p class="text-sm -mt-3 mb-5 text-slate-300 text-opacity-70">
-                        Big promotion
+                        Price by sizes.
                     </p>
 
                     <div class="py-3 mb-3">
