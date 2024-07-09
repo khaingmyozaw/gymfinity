@@ -32,6 +32,46 @@
             :avatar="null"
             />
 
+            <div class="w-full p-1 sm:p-3 mt-2 sm:flex border border-white border-opacity-30 rounded-md">
+              {{-- Avatar --}}
+              <div>
+                <div class="zeembiavatar zeembiplaceholder">
+      
+                  <div class="shrink-0 h-full me-3">
+                    <div class="bg-neutral text-neutral-content w-12 h-12 rounded-full flex justify-center items-center">
+                        {{-- @php
+                            $fname = substr($name, 0, 1);
+                        @endphp --}}
+                        {{-- @if($avatar == null) --}}
+                        <span class="text-2xl">K</span>
+                        {{-- @else 
+                        <img src="{{ config('app.url') }}/storage/{{ $avatar }}" alt="">
+                        @endif --}}
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 h-full">
+                <form action="" method="">
+                  <span>
+                    <svg class="inline-block" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path></svg>
+
+                    reply to @Mg Mg
+                  </span>
+                  <textarea name="message" id="message" rows="5" placeholder="Please, enter your message here"
+                    class="w-full h-full text-white p-3 rounded-md bg-white bg-opacity-10"
+                  ></textarea>
+
+                  <div class="w-full">
+                    <button class="zeembibtn zeembibtn-success float-right">Reply</button>
+                    <button class="zeembibtn zeembibtn-active zeembibtn-neutral mr-3 float-right">Cancle</button>
+                  </div>
+                  
+                </form>
+              </div>
+              
+            </div>
         </div>
       
         {{-- Shipping --}}

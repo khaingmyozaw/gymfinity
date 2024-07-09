@@ -26,7 +26,7 @@
                 @if ($reply)
                 <span class="inline-block text-sm text-slate-300 mb-3">
 
-                    <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(203 213 225);transform: ;msFilter:;"><path d="M10 11h6v7h2v-8a1 1 0 0 0-1-1h-7V6l-5 4 5 4v-3z"></path></svg>
+                    <svg class="inline-block" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path></svg>
 
                     replied to
                     <a href="#" class="text-pre-yellow text-bold hover:underline">
