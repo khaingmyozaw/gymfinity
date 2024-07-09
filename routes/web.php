@@ -13,6 +13,9 @@ Route::get('/p-detail', function() {
 Route::get('/b-detail', function() {
     return view('pages.blogs.blog-details');
 });
+Route::get('/i-detail', function() {
+    return view('pages.products.item-details');
+});
 
 Route::get('/register', function() {
     return view('pages.register-page');
