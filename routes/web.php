@@ -16,6 +16,9 @@ Route::get('/b-detail', function() {
 Route::get('/i-detail', function() {
     return view('pages.products.item-details');
 });
+Route::get('/fav', function() {
+    return view('pages.products.favorite-products');
+});
 
 Route::get('/sign-up', function() {
     return view('pages.auth.register-page');
