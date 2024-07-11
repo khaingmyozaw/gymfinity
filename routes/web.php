@@ -17,9 +17,9 @@ Route::get('/i-detail', function() {
     return view('pages.products.item-details');
 });
 
-Route::get('/register', function() {
-    return view('pages.register-page');
-});
-Route::get('/login', function() {
-    return view('pages.login-page');
-});
+Route::get('/sign-up', function() {
+    return view('pages.auth.register-page');
+})->name('signup');
+Route::get('/sign-in', function() {
+    return view('pages.auth.login-page');
+})->name('signin');

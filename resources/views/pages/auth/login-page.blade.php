@@ -3,9 +3,9 @@
 <div class="w-full h-screen p-5 bg-pre-dark-green flex items-center justify-center">
     <div class="w-full md:w-3/4 h-3/4 h-min-96 rounded bg-slate-100 shadow-md overflow-hidden flex">
         <div class="sm:w-2/5 h-full overflow-hidden hidden sm:block">
-            <img src="{{ asset('images/woman.jpeg') }}" alt="login" class="size-full object-cover object-center">
+            <img src="{{ asset('images/assets/form_img.jpeg') }}" alt="login" class="size-full object-cover object-center">
         </div>
-        <div class="w-full sm:w-3/5 h-full p-5">
+        <div class="w-full sm:w-3/5 h-full p-5 text-slate-600">
             <h1 class="text-2xl h-1/5 font-bold text-pre-dark-green text-center">Gymfinity</h1>
             <form action="" method="" class="w-full h-3/5 size-full py-3 flex flex-col items-center justify-around">
                 <p class="mt-4">Welcome back! Please, login.</p>
@@ -31,6 +31,9 @@
                     Sign in
                 </button>
             </form>
+            <div class="text-center text-slate-600">
+                Don't you have an account? <a href="{{ route('signup') }}" class="underline text-blue-600">Sign up here</a>
+            </div>
         </div>
     </div>
 </div>

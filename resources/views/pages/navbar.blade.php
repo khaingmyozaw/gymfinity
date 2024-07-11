@@ -21,22 +21,31 @@
                 </div>
             </div>
             <div class="flex">
-                <a href="#" class="text-black shrink-0 py-2 px-4 mr-1 rounded-md bg-white bg-opacity-90 hidden lg:block">
+                <a href="{{ route('signin') }}" class="text-black shrink-0 py-2 px-4 mr-2 rounded-md bg-white bg-opacity-90 hidden lg:block">
                     Sign in
                 </a>
 
                 {{-- Search image --}}
-                <button class="text-white rounded-full p-2 mr-1 hover:bg-white hover:bg-opacity-10">
+                <button class="text-white rounded-full p-2 mr-2 hover:bg-white hover:bg-opacity-10" onclick="my_modal_2.showModal()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                       </svg>
                 </button>
 
+                {{-- Cart image --}}
+                <button class="text-white rounded-full p-2 mr-2 hover:bg-white hover:bg-opacity-10 hidden lg:block relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#f1f1f1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    {{-- badge --}}
+                    <span class="py-0 px-1 flex items-center justify-center text-xs bg-red-500 rounded-full absolute top-0 -right-1">10</span>
+                </button>
+
                 {{-- Favorite image --}}
-                <button class="text-white rounded-full p-2 mr-1 hover:bg-white hover:bg-opacity-10 hidden lg:block">
+                <button class="text-white rounded-full p-2 mr-2 hover:bg-white hover:bg-opacity-10 hidden lg:block relative">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                      </svg>                      
+                      </svg>
+                      {{-- badge --}}
+                      <span class="py-0 px-1 flex items-center justify-center text-xs bg-red-500 rounded-full absolute top-0 -right-1">10</span>                   
                 </button>
 
                 {{-- Profile image --}}
@@ -76,7 +85,26 @@
             <a href="#items" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Items</a>
             <a href="#blogs" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Blogs</a>
             <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Favorite</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Sign in</a>
+            <a href="{{ route('signin') }}" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:bg-opacity-30 hover:text-white">Sign in</a>
           </div>
     </div>
 </nav>
+
+{{-- Search Dialog --}}
+<!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_2" class="zeembimodal -translate-y-1/3">
+  <div class="zeembimodal-box">
+        <x-input-component 
+        :id="'search'"
+        :type="'text'"
+        :placeholder="'Type here to search'"
+        class="bg-transparent text-white w-full"
+        >
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+
+        </x-input-component>
+    </div>
+</dialog>
